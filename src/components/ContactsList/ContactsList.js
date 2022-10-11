@@ -24,9 +24,9 @@ export default function ContactsList() {
         <div> No contacts </div>
       ) : (
         <ListContacts>
-          {contacts.map(({ id, name, phone }) => (
+          {contacts.map(({ id, name, number }) => (
             <ItemContact key={id}>
-              {name}: {phone}
+              {name}: {number}
               <DelBtn type="button" onClick={() => onDeleteContact(id)}>
                 Delete
               </DelBtn>
